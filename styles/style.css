@@ -1,0 +1,111 @@
+.body {
+    margin: 0;
+    }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    }
+
+.page-wrapper {
+    min-height: 100vh;
+    background-color: rgb(219, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: wheat;
+    width: 70%;
+    height: 5em;
+    }
+
+.month {
+    font-size: 5rem;
+    }
+
+.year {
+    font-size: 5rem;
+    }
+
+.overflow .date {
+    background-color: rgb(216, 216, 216);
+    }
+
+.calendar-wrapper {
+    border: 1px solid rgb(0, 0, 0);
+    display: grid;
+    width: 70%;
+    grid-template-rows: 3em 1fr;
+    background-color: rgb(0, 0, 0);
+    }
+
+.days-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: rgb(0, 0, 0);
+    gap: 1px;
+    }
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 24, 24);
+    font-size: 1.60rem;
+    }
+
+.dates-wrapper {
+    border: 1px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: rgb(0, 0, 0);
+    }
+
+.calendar-square {
+    height: 8rem;
+    position: relative;
+    background-color: rgb(219, 24, 24);
+    }
+
+.date {
+    background-color: wheat;
+    font-size: 150%;
+    color:rgb(0, 0, 0);
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.calendar-square textarea {
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    }
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: wheat;
+    width: 70%;
+    height: 5em;
+    }
